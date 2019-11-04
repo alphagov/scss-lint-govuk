@@ -3,5 +3,8 @@
 library("govuk")
 
 node {
-  govuk.buildProject()
+  govuk.buildProject(
+    sassLint: false,
+    gemName: "scss_lint-govuk"
+  )
 }

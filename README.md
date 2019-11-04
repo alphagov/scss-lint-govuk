@@ -1,23 +1,30 @@
-# GOV.UK Lint
+# scss-lint GOV.UK
 
-This repo configures various linters to comply with our [style guides][guides].
+This repository provides common [scss-lint][scss-lint] rules for use with GOV.UK SCSS projects to comply with our [style guides][guides].
 
-## Supported languages
+## Installation
 
-### Sass
+Add `scss_lint-govuk` to your Gemfile and then run `bundle install`:
 
-Linter: [scss-lint](https://github.com/brigade/scss-lint)
-
-To use, include `govuk-lint` in your Gemfile and run:
-```
-bundle exec govuk-lint-sass <directory or file>
-bundle exec govuk-lint-sass app/assets/stylesheets
+```ruby
+# Gemfile
+gem 'scss_lint-govuk'
 ```
 
-When linting your app any assets within `vendor` will be ignored by
-default.
+Add the plugin to your project's scss-lint config:
 
-Auto-correction and `--diff` mode are unavailable.
+```yaml
+# .scss-lint.yml
+plugin_gems: ['scss_lint-govuk']
+```
+
+## Usage
+
+Run scss-lint:
+
+```sh
+bundle exec scss-lint
+```
 
 [guides]: https://github.com/alphagov/styleguides
-[rubocop]: https://github.com/bbatsov/rubocop
+[scss-lint]: https://github.com/brigade/scss-lint
