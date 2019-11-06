@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.description   = "Shared scss-lint rules for SASS projects in GOV.UK"
   spec.homepage      = "https://github.com/alphagov/scss-lint-govuk"
 
-  spec.files         = Dir[".scss-lint.yml", "*.md"]
+  spec.files         = Dir[".scss-lint.yml", "*.md", "lib/**/*"]
 
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rubocop-govuk"
