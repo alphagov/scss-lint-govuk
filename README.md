@@ -1,5 +1,7 @@
 # scss-lint GOV.UK
 
+**⚠️  This project is deprecated. It has been superseded by [stylelint-config-gds](https://github.com/alphagov/stylelint-config-gds)**
+
 This repository provides common [scss-lint][scss-lint] rules for use with GOV.UK SCSS projects to comply with our [style guides][guides].
 
 ## Installation
